@@ -4,10 +4,9 @@
    <br>
 🥤 Lightweight ReactJS form validation library with Hooks
   <br>
-
 ## Table of Contents
 
-1. [Installation](#installation)
+1. [Installation](#Installation)
 2. [Usage](#usage)
 3. [configuration](#configuration)
 4. [examples](#examples)
@@ -33,9 +32,7 @@
 
 <br>
 
-## 🛠 Config
-
-Pass in the Config props to the component when you place it in <b>any</b> of your vue files
+## 🛠 Configuration
 
 ```jsx
 const {
@@ -85,7 +82,6 @@ const {
 ```
 
 <br>
-
 ## 📦 Props
 
 Bubble Form takes in some parameter to work properly
@@ -110,7 +106,6 @@ const loginErrorMessage = {
 ```
 
 <br>
-
 ### 🛠 initialValues
 
 Initial values for the form data should an empty string or an object with the same keys as the form data
@@ -171,7 +166,6 @@ const loginValidations = {
             },
         },
     };
-    
 ```
 
 <br>
