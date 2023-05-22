@@ -91,8 +91,8 @@ Pass in the Config props to the component when you place it in <b>any</b> of you
 Bubble Form takes in some parameter to work properly
 
 | Params | Description | Type | Default |
-|:----------:|:-----:|:----:|:---:|:-----:|:----:|
-| data | return data from the form | *`object`* | none |
+| --- | --- | --- | --- |
+| data | return object containing the form data | *`Object`* | none |
 | handleChange | onChange event handler. Useful for when you need to track whether an input has been touched or not. This should be   passed to `<input onBlur={handleChange()} ... />` | *`Function`* | none |
 | handleSubmit | Submit handler. This should be passed to `<form onSubmit={props.handleSubmit}>` </form> | *`Function`* | none |
 | handleBlur | onBlur event handler. Useful for when you need to track whether an input has been touched or not. This should be passed to `<input onBlur={handleBlur()} ... />` | *`Function`* | none|
