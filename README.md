@@ -92,6 +92,9 @@ Bubble Form takes in some parameter to work properly
 
 <br>
 | Params | Description | Type | Default
-| --- | --- | --- | --- |
-
+|:----------:|:-----:|:----:|:---:|:-----:|:----:|
+| data | return data from the form | *`object`* | none |
+| handleChange | onChange event handler. Useful for when you need to track whether an input has been touched or not. This should be   passed to `<input onBlur={handleChange()} ... />` | *`Function`* | none |
+| handleSubmit | Submit handler. This should be passed to `<form onSubmit={props.handleSubmit}>` </form> | *`Function`* | none |
+| handleBlur | onBlur event handler. Useful for when you need to track whether an input has been touched or not. This should be passed to `<input onBlur={handleBlur()} ... />` | *`Function`* | none|
 <br>
