@@ -1,11 +1,6 @@
 {
-  "include": ["src", "test/App.test.ts"],
+  "include": ["src"],
   "exclude": ["dist", "node_modules"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  },
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
