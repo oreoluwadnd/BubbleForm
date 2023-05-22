@@ -92,5 +92,6 @@ Bubble Form takes in some parameter to work properly
 
 <br>
 | Params | Description | Type | Default
+| --- | --- | --- | --- |
 
 <br>
