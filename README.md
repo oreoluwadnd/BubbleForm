@@ -96,3 +96,80 @@ Bubble Form takes in some parameter to work properly
 | handleChange | onChange event handler. Useful for when you need to track whether an input has been touched or not. This should be   passed to `<input onBlur={handleChange()} ... />` | *`Function`* | none |
 | handleSubmit | Submit handler. This should be passed to `<form onSubmit={props.handleSubmit}>` </form> | *`Function`* | none |
 | handleBlur | onBlur event handler. Useful for when you need to track whether an input has been touched or not. This should be passed to `<input onBlur={handleBlur()} ... />` | *`Function`* | none|
+
+### 🛠 initailErrorMessage
+
+ Initial error message to be displayed when the form is rendered for the first time should an empty string or an object with the same keys as the form data
+
+ ```jsx
+    const loginErrorMessage = {
+        email: "",
+        password: "",
+    };
+    
+     ```
+<br>
+
+
+### 🛠 initialValues
+
+Initial values for the form data should an empty string or an object with the same keys as the form data
+
+ ```jsx
+    const loginFormData = {
+        email: "",
+        password: "",
+    };
+    
+     ```
+<br>
+
+### 🛠 sanitizeFn
+
+A function that takes in the value of the input and returns the sanitized value
+
+ ```jsx
+    const sanitizeFn = (value) => {
+        return value.trim();
+    };
+    
+     ```
+
+<br>
+
+### 🛠 validations
+
+An object containing the validation rules for the form data
+
+ ```jsx
+    const loginValidations = {
+        email: {
+            required: {
+                value: true,
+                message: "Email is required",
+            },
+            pattern: {
+                value: "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+                message: "Email is invalid",
+            },
+        },
+        password: {
+            required: {
+                value: true,
+                message: "Password is required",
+            },
+            pattern: {
+                value: "^(?=.*[a-z])[a-zA-Z\\d]{8,}$",
+                message: "Password must be at least 8 characters",
+            },
+            custom: { // take in an object of custom rules
+                length: { //any custom name
+                    isValid: (value: any) => value.length > 6, // Function that takes in the value of the input and returns a boolean
+                    message: "First name must be at least 8 characters", // error message
+                },
+            },
+        },
+    };
+    
+     ```
+<br>
