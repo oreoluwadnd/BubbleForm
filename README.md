@@ -38,7 +38,7 @@
 Pass in the Config props to the component when you place it in <b>any</b> of your vue files
 
 ```jsx
-  const {
+const {
     data: loginData,
     handleChange,
     handleSubmit,
@@ -101,39 +101,40 @@ Bubble Form takes in some parameter to work properly
 
  Initial error message to be displayed when the form is rendered for the first time should an empty string or an object with the same keys as the form data
 
- ```jsx
-    const loginErrorMessage = {
-        email: "",
-        password: "",
+```jsx
+const loginErrorMessage = {
+    email: "",
+    password: "",
     };
     
-     ```
-<br>
+```
 
+<br>
 
 ### 🛠 initialValues
 
 Initial values for the form data should an empty string or an object with the same keys as the form data
 
- ```jsx
-    const loginFormData = {
-        email: "",
-        password: "",
+```jsx
+const loginFormData = {
+    email: "",
+    password: "",
     };
     
-     ```
+```
+
 <br>
 
 ### 🛠 sanitizeFn
 
 A function that takes in the value of the input and returns the sanitized value
 
- ```jsx
-    const sanitizeFn = (value) => {
-        return value.trim();
+```jsx
+const sanitizeFn = (value) => {
+    return value.trim();
     };
     
-     ```
+```
 
 <br>
 
@@ -141,35 +142,36 @@ A function that takes in the value of the input and returns the sanitized value
 
 An object containing the validation rules for the form data
 
- ```jsx
-    const loginValidations = {
-        email: {
-            required: {
-                value: true,
-                message: "Email is required",
+```jsx
+const loginValidations = {
+    email: {
+        required: {
+            value: true,
+            message: "Email is required",
             },
-            pattern: {
-                value: "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
-                message: "Email is invalid",
+        pattern: {
+            value: "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
+            message: "Email is invalid",
             },
         },
-        password: {
-            required: {
-                value: true,
-                message: "Password is required",
+    password: {
+        required: {
+            value: true,
+            message: "Password is required",
             },
-            pattern: {
-                value: "^(?=.*[a-z])[a-zA-Z\\d]{8,}$",
-                message: "Password must be at least 8 characters",
+        pattern: {
+            value: "^(?=.*[a-z])[a-zA-Z\\d]{8,}$",
+            message: "Password must be at least 8 characters",
             },
             custom: { // take in an object of custom rules
-                length: { //any custom name
-                    isValid: (value: any) => value.length > 6, // Function that takes in the value of the input and returns a boolean
-                    message: "First name must be at least 8 characters", // error message
+            length: { //any custom name
+                isValid: (value: any) => value.length > 6, // Function that takes in the value of the input and returns a boolean
+                message: "First name must be at least 8 characters", // error message
                 },
             },
         },
     };
     
-     ```
+```
+
 <br>
