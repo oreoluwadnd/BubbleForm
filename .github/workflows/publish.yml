@@ -1,9 +1,9 @@
-name: Publish to npm
-
+name: published
+# Controls when the workflow will run
 on:
-  push:
-    branches:
-      - main
+  # Triggers the workflow on published releases
+  release:
+    types: [published]
 
 jobs:
   build:
