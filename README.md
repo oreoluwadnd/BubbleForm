@@ -43,7 +43,7 @@ const {
     errors,
     handleBlur,
   } = useForm({
-    initailErrorMessage: loginErrorMessage,
+    initialErrorMessage: loginErrorMessage,
     initialValues: loginFormData,
     sanitizeFn: (value) => {
       return value.trim();
@@ -95,7 +95,7 @@ Bubble Form takes in some parameter to work properly
 | handleSubmit | Submit handler. This should be passed to `<form onSubmit={props.handleSubmit}>` </form> | *`Function`* | none |
 | handleBlur | onBlur event handler. Useful for when you need to track whether an input has been touched or not. This should be passed to `<input onBlur={handleBlur()} ... />` | *`Function`* | none|
 
-### 🛠 initailErrorMessage
+### 🛠 initialErrorMessage
 
  Initial error message to be displayed when the form is rendered for the first time should an empty string or an object with the same keys as the form data
 

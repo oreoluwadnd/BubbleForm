@@ -25,12 +25,12 @@ interface sanitizeFn {
 export const BubbleForm = (options: {
   validations: Validation
   initialValues?: any
-  initailErrorMessage?: any
+  initialErrorMessage?: any
   sanitizeFn?: sanitizeFn
   onSubmit?: () => any
 }) => {
   const [data, setData] = useState(options?.initialValues || {})
-  const [errors, setErrors] = useState(options?.initailErrorMessage || {})
+  const [errors, setErrors] = useState(options?.initialErrorMessage || {})
 
   const validateField = (key?: string, values?: any) => {
     let validations = options?.validations

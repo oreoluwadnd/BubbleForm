@@ -1,6 +1,6 @@
 {
   "name": "bubbleform",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "🥤 Lightweight ReactJS form validation library with Hooks",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -29,8 +29,24 @@
   ],
   "keywords": [
     "react",
+    "reactjs",
+    "react-hooks",
+    "react-hook",
+    "react-form",
+    "react-form-validation",
+    "react-validation",
+    "react-validation-hook",
+    "react-validation-hooks",
+    "react-validation-form",
+    "react-validation-form-hook",
+    "react-validation-form-hooks",
+    "react-form-validation-hook",
+    "react-form-validation-hooks",
+    "react-form-hook",
+    "react-form-hooks",
+    "react-forms",
     "typescript",
-    "awesome-project"
+    "form"
   ],
   "author": "Emmanuel Oreoluwa",
   "license": "MIT",
