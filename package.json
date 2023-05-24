@@ -1,6 +1,6 @@
 {
   "name": "bubbleform",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "description": "🥤 Lightweight ReactJS form validation library with Hooks",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
